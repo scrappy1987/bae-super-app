@@ -2,6 +2,8 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
+
 import com.qa.app.operations.Addition;
 
 public class AdditionTest {
@@ -14,6 +16,7 @@ public class AdditionTest {
 
 	private final int RESULT = 6;
 
+	@Test
 	public void testAdd() {
 		assertEquals("Incorrect value returned", "The result is " + RESULT, ADD.calculate(NUM1, NUM2));
 	}
